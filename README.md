@@ -2,6 +2,8 @@
 
 This is a simple program that converts arabic numbers to roman numerals. It's written in rust and has zero dependencies (as expected).
 
+Binaries are available for mac os x (x86_64 and aarch64). To run on other platforms clone and build from source.
+
 ## Usage
 
 ```bash
@@ -16,6 +18,10 @@ cargo test
 
 # building the binary
 cargo build --release
+
+# building for release
+cargo build --release --target aarch64-apple-darwin --target x86_64-apple-darwin
+
 ```
 
 ## Example
